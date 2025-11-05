@@ -15,3 +15,9 @@ makemigrations:
 
 superuser:
 > $(MANAGE) createsuperuser
+
+schema-json:
+> $(MANAGE) spectacular --file schema.json
+
+schema-yaml:
+> $(MANAGE) spectacular --file schema.yaml --format yaml
